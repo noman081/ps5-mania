@@ -7,7 +7,7 @@ const Header = () => {
             <h1 className='text-white'><Link to='/'>PS5 Mania</Link></h1>
             <div>
                 <Link to='/home'>Home</Link>
-                <Link to='/review'>Review</Link>
+                <Link to='/reviews'>Review</Link>
                 <Link to='/dashboard'>Dashboard</Link>
                 <Link to='/blogs'>Blogs</Link>
                 <Link to='/about'>About</Link>

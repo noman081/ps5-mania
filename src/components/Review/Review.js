@@ -1,9 +1,16 @@
 import React from 'react';
 
-const Review = () => {
+const Review = (props) => {
+    const { name, ratings, comment } = props.review;
     return (
-        <div>
-            <h1>What Customer says!</h1>
+        <div className="col">
+            <div className="card h-100">
+                <div className="card-body">
+                    <p className="card-text">" {comment} "</p>
+                    <p className="card-text">Ratings: {ratings} star</p>
+                    <h5 className="card-title">{name}</h5>
+                </div>
+            </div>
         </div>
     );
 };

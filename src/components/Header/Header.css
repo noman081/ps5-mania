@@ -1,6 +1,8 @@
 .header {
     padding: 10px 50px;
     font-size: 18px;
+    width: 100%;
+    margin-bottom: 30px;
 }
 
 .header a {

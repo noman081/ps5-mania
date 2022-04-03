@@ -1,0 +1,14 @@
+.header {
+    padding: 10px 50px;
+    font-size: 18px;
+}
+
+.header a {
+    text-decoration: none;
+    margin-right: 30px;
+    color: white;
+}
+
+.header a:hover {
+    color: orange;
+}

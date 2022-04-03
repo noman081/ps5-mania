@@ -4,6 +4,8 @@ import ps5 from '../../ps5.jpg';
 import Review from '../Review/Review';
 const Home = () => {
     const [reviews, setReviews] = useReview();
+    let reviewMin = reviews.slice(0, 3);
+
     return (
         <div>
             <div className='d-lg-flex justify-content-lg-around align-items-lg-center mx-4'>
@@ -21,9 +23,10 @@ const Home = () => {
                 <h1>Some review of customer</h1>
                 <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 my-4">
                     {
-                        reviews.map(review => <Review key={review.id} review={review}></Review>)
+                        reviewMin.map(review => <Review key={review.id} review={review}></Review>)
                     }
                 </div>
+                <button className="btn btn-outline-primary">See More...</button>
             </div>
         </div>
     );

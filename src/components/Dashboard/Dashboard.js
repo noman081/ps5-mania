@@ -10,7 +10,7 @@ const Dashboard = () => {
     return (
         <div className='d-lg-flex justify-content-lg-around align-items-lg-center'>
             <LineChart
-                width={500}
+                width={350}
                 height={300}
                 data={data}
                 margin={{
@@ -30,7 +30,7 @@ const Dashboard = () => {
             </LineChart>
 
             <BarChart
-                width={500}
+                width={350}
                 height={300}
                 data={data}
                 margin={{

@@ -17,7 +17,7 @@ const Home = () => {
                 <div>
                     <h1>Welcome to PS5 Mania</h1>
                     <p>Here you can find all the materials related to Play Station 5. This console make a revolution in current gaming section. </p>
-                    <button className="btn btn-outline-dark">Live Demo</button>
+                    <button className="btn btn-outline-dark mb-4">Live Demo</button>
                 </div>
 
                 <div>

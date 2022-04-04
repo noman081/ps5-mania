@@ -1,11 +1,16 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import useReview from '../../hooks/useReview';
 import ps5 from '../../ps5.jpg';
 import Review from '../Review/Review';
 const Home = () => {
     const [reviews, setReviews] = useReview();
     let reviewMin = reviews.slice(0, 3);
-
+    const navigate = useNavigate();
+    const handleSeeAll = () => {
+        const path = '/reviews';
+        navigate(path);
+    }
     return (
         <div>
             <div className='d-lg-flex justify-content-lg-around align-items-lg-center mx-4'>
@@ -26,7 +31,7 @@ const Home = () => {
                         reviewMin.map(review => <Review key={review.id} review={review}></Review>)
                     }
                 </div>
-                <button className="btn btn-outline-primary">See More...</button>
+                <button onClick={handleSeeAll} className="btn btn-outline-primary">See All Reviews</button>
             </div>
         </div>
     );

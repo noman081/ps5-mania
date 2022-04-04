@@ -15,6 +15,10 @@
     color: orange;
 }
 
+.review-icon {
+    color: gold;
+}
+
 @media only screen and (max-width: 688px) {
     .header {
         text-align: center;
